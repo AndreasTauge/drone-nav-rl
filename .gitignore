@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Training artifacts
+checkpoints/
+runs/
+logs/
+outputs/
+wandb/
+*.ckpt
+*.msgpack
+*.pkl
+*.npz
+
+# Exported models (commit specific ones deliberately with `git add -f`)
+*.onnx
+
+# Media (keep README assets in media/ small; add with `git add -f` if needed)
+*.mp4
+*.avi
+*.mkv
+*.gif
+!media/*.gif
+
+# ROS 2 / colcon
+ros2_ws/build/
+ros2_ws/install/
+ros2_ws/log/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# Private progress notes
+PROGRESS.md
